@@ -1,0 +1,461 @@
+/* General styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    background-color: #fff;
+}
+
+/* Video banner */
+
+.container-video{
+    background-image: url('../Lp/desktop/pic1.jpg');
+    max-height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.iframe-container{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 58%;
+}
+.iframe-container iframe{
+    position: absolute;
+    top: 15px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 55%;
+    height: 65%;
+}
+
+/* City banner */
+
+.container-banner{
+    max-height: 1000px;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.container-banner img{
+    width: 100%;
+}
+.banner-tablet{
+    display: none;
+}
+.banner-mobile{
+    display: none;
+}
+
+/* Gif banner */
+
+.container-banners{
+    position: relative;
+}
+.gif{
+    width: 58%;
+    display: flex;
+    justify-content: flex-end;
+}
+.banner{
+    width: 44%;
+    position: absolute;
+    top: 0;
+    left: 59%;
+}
+.gif img{
+    width: 76%;
+    max-height: 560px;  
+}
+.banner img{
+    width: 58%;
+    height: 100%;
+}
+
+.cafe-banner img{
+    width: 58%;
+    margin: 40px auto 0 auto;
+}
+
+/* Products */
+
+.products{
+    display: flex;
+    justify-content: space-around;
+    width: 74%;
+    margin: 60px auto;
+}
+.product {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 30px;
+    max-width: 320px;
+}
+.product-img{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 5px;
+    height: 100%;
+}
+.product-img img{
+    width: 98%;
+}
+.product .name{
+    margin-top: 20px;
+    color: rgb(92, 92, 92);
+}
+.product .info, .product .price{
+    font-weight: 600;
+}
+.product .buy{
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 8px 32px;
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+}
+
+/* London banner */
+
+.container-banner .banner-london{
+    width: 74%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+
+/* Moth banner */
+
+.container-banners-moth{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.container-banners-moth div{
+    width: 74%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.container-banners-moth .gif{
+    width: 41%;
+    position: absolute;
+    top: -200px;
+    left: 6px;
+    z-index: 2;
+}
+.container-banners-moth .banner-moth{
+    margin-top: 50px;
+    width: 70%;
+}
+.container-banners-moth .gif img{
+    width: 100%;
+    max-height: 850px;  
+}
+.container-banners-moth .banner-moth img{
+    width: 100%;
+}
+.product-img-secondary{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    max-height: 450px;
+}
+
+/* Secondary products */
+
+.product-img-secondary img{
+    max-height: 450px;
+}
+
+/* Media queries */
+
+@media(max-width: 1550px){
+    .products{
+        margin: 30px auto;
+        justify-content: center;
+    }
+    .product {
+        font-size: 18px;
+        width: 25%;
+    }
+
+    .product-img img{
+        width: 80%;
+    }
+    .product-img-secondary{
+        max-height: 350px;
+    }
+
+    .product-img-secondary img{
+        max-height: 350px;
+    }
+}
+@media(max-width: 1230px){
+    .products {
+        width: 84%;
+        padding: 0 20px;
+    }
+    .product-img-secondary{
+        max-height: 300px;
+    }
+
+    .product-img-secondary img{
+        max-height: 300px;
+    }
+}
+@media(max-width: 1130px){
+    .product {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .product-img-secondary{
+        max-height: 280px;
+    }
+
+    .product-img-secondary img{
+        max-height: 280px;
+    }
+}
+@media(max-width: 1030px){
+    .product {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .product .buy{
+        font-size: 14px;
+        padding: 4px 20px;
+    }
+    .product-img-secondary{
+        max-height: 260px;
+    }
+
+    .product-img-secondary img{
+        max-height: 260px;
+    }
+    .product .buy{
+        font-size: 14px;
+        padding: 4px 20px;
+    }
+}
+
+@media(max-width: 900px){
+    .container-video{
+        background-image: url('../Lp/tablet/pic1_03.jpg');
+    }
+    .iframe-container{
+        padding-bottom: 96.2%;
+    }
+    .iframe-container iframe{
+        top: 60px;
+        width: 80%;
+        height: 54%;
+    }
+    .banner-desktop{
+        display: none;
+    }
+    .banner-tablet{
+        display: block;
+    }
+
+    .gif{
+        width: 100%;
+    }
+    .banner{
+        width: 70%;
+        top: 146%;
+        left: 56%;
+    }
+    .gif img{
+        width: 100%;
+    }
+    .banner img{
+        width: 58%;
+    }
+    
+    .cafe-banner img{
+        width: 100%;
+        margin: 0 auto 200px auto;
+    }
+
+    .products{
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 10px auto;
+    }
+    .product {
+        width: 50%;
+        padding: 20px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .product .buy{
+        font-size: 20px;
+        padding: 6px 28px;
+    }
+    .container-banner .banner-london{
+        width: 100%;
+    }
+    .container-banners-moth div{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .container-banners-moth .gif{
+        position: relative;
+        width: 51%;
+        top: -30px;
+        left: 32%;
+    }
+    .container-banners-moth .banner-moth{
+        margin-top: 0;
+        width: 100%;
+        position: relative;
+        bottom: 25px
+    }
+}
+@media(max-width: 768px){
+    .banner{
+        top: 139%;
+    }
+}
+@media(max-width: 700px){
+    .cafe-banner img {
+        margin: 0 auto 130px auto;
+    }
+    .products{
+        width: 98%;
+    }
+    .product {
+        padding: 20px 10px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .product .buy{
+        font-size: 18px;
+        padding: 6px 24px;
+    }
+}
+@media(max-width: 550px){
+
+    .product {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .product-img-secondary{
+        max-height: 240px;
+    }
+
+    .product-img-secondary img{
+        max-height: 240px;
+    }
+    .product .buy{
+        font-size: 14px;
+        padding: 4px 20px;
+    }
+}
+@media(max-width: 450px){
+    .container-video{
+        background-image: url('../Lp/mobile/pic1_03.gif');
+        position: relative;
+        left: -1px;
+    }
+    .iframe-container{
+        padding-bottom: 128.7%;
+    }
+    .iframe-container iframe{
+        top: 30px;
+        width: 86%;
+        height: 40%;
+    }
+    .banner-tablet{
+        display: none;
+    }
+    .banner-mobile{
+        display: block;
+    }
+    
+    .banner{
+        position: relative;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .banner img{
+        width: 115%;
+        margin: 20px auto;
+    }
+    .cafe-banner img {
+        margin: 0 auto 20px auto;
+    }
+    .products {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .product {
+        font-size: 12px;
+        padding: 20px 0;
+        line-height: 15px;
+    }
+    .product .buy {
+        font-size: 12px;
+        padding: 4px 16px;
+    }
+    .container-banners-moth div{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .container-banners-moth .gif{
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+    .container-banners-moth .banner-moth{
+        bottom: 0;
+    }
+}
+@media(max-width: 370px){
+    .product-img-secondary img {
+        max-height: 200px;
+    }
+}
+@media(max-width: 335px){
+    .product .info, .product .name{
+        height: 34px;
+    }
+    .product-img-secondary img {
+        max-height: 180px;
+    }
+}
